@@ -1,4 +1,4 @@
-name: application-local
+name: local
 
 spring:
   datasource:
