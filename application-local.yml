@@ -1,7 +1,9 @@
-name: local
-
-spring:
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/springcloud?characterEncoding=UTF-8
-    username: root
-    password: 123
+consul:
+      host: 39.108.137.231
+      port: 8500
+      discovery:
+        heartbeat:
+          enabled: true
+        health-check-path: /health
+        instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+        serviceName: ${spring.application.name}
