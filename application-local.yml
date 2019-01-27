@@ -1,4 +1,9 @@
-consul:
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springcloud?characterEncoding=UTF-8
+    username: root
+    password: 123
+  consul:
       host: 39.108.137.231
       port: 8500
       discovery:
