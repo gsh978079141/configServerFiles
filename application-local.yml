@@ -8,12 +8,12 @@ spring:
 #     restart:
 #       enabled: true
   # 配置中心
-  consul:
-      host: 39.108.137.231
-      port: 8500
-      discovery:
-        heartbeat:
-          enabled: true
-        health-check-path: /health
-        instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
-        serviceName: ${spring.application.name}
+#   consul:
+#       host: 39.108.137.231
+#       port: 8500
+#       discovery:
+#         heartbeat:
+#           enabled: true
+#         health-check-path: /health
+#         instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+#         serviceName: ${spring.application.name}
