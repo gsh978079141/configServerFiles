@@ -4,9 +4,9 @@ spring:
     username: root
     password: 123
   # 热加载
-  devtools:
-    restart:
-      enabled: true
+#   devtools:
+#     restart:
+#       enabled: true
   # 配置中心
   consul:
       host: 39.108.137.231
