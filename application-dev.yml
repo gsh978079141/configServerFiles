@@ -8,8 +8,8 @@ spring:
         enabled: true
     #rabbitmq配置
   rabbitmq:
-    password: admin
-    username: admin
+    password: guest
+    username: guest
     host: 127.0.0.1
     port: 5672
       #监听配置
