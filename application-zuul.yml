@@ -1,0 +1,7 @@
+#网关配置
+zuul:
+  routes:
+    #    url别名映射/member访问consul服务中的/service-member
+    service-member: /member/**
+    service-config-server: /config-server/**
+    service-config-client: /config-client/**
