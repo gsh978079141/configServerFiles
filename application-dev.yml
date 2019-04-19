@@ -8,7 +8,7 @@ spring:
 #   application:
 #     name: config-server-dev
 # ---
-# spring:
+spring:
 #   profiles: test
 #   application:
 #     name: config-server-test
