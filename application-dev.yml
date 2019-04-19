@@ -46,3 +46,4 @@ management:
       exposure:
         include: bus-refresh
 #    配置中心配置
+#
