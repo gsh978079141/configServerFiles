@@ -1,17 +1,19 @@
+#spring:
+#  profiles:
+#    active:
+#      - dev
+#---
+#spring:
+#  profiles: dev
+#  application:
+#    name: config-server-dev
+#---
+#spring:
+#  profiles: test
+#  application:
+#    name: config-server-test
+#
 spring:
-  profiles:
-    active:
-      - dev
----
-spring:
-  profiles: dev
-  application:
-    name: config-server-dev
----
-spring:
-  profiles: test
-  application:
-    name: config-server-test
   cloud:
     #  开启消息跟踪
     bus:
