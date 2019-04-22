@@ -12,9 +12,21 @@
 #  profiles: test
 #  application:
 #    name: config-server-test
-#
+
 spring:
+  application:
+    name: config-client
   cloud:
+    #    服务注册
+    consul:
+      host: consul.com
+      port: 8500
+      discovery:
+        heartbeat:
+          enabled: true
+        health-check-path: /health
+        instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+        serviceName: ${spring.application.name}
     #  开启消息跟踪
     bus:
       trace:
@@ -23,6 +35,9 @@ spring:
         enabled: true
     #rabbitmq配置
   rabbitmq:
+    #采用消息确认模式
+    publisher-confirms: true
+    publisher-returns: true
     password: guest
     username: guest
     host: 127.0.0.1
